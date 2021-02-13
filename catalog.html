@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+       <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+       <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+<nav>
+     <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">
+        <img src="img/Standoff.JFIF"></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="index.html">Головна</a></li>
+        <li class="active"><a href="catalog.html">Каталог</a></li>
+      </ul>
+
+
+  <!-- Modal Trigger -->
+  <a class="cart-btn btn-floating btn-large waves-effect waves-light btn modal-trigger" href="#modal1">
+            <i class="material-icons">delete_outline
+</i>
+          </a>
+          <!-- Кнопка Кошик -->
+
+
+     </div>
+    </nav>
+
+
+
+<div class="title"> 
+  <h1>Котолог товарів</h1>
+</div>
+
+<div class="cards-container">
+
+
+
+    <!-- Картка товару-->
+        <div class="card-wrap">
+          <a href="#">
+            <img src="img/slide-uyt.JFIF">
+            <h2> Аккаунт клеш </h2>
+          </a>
+          <p> Розширений вибір </p>
+          <span> 100 грн. </span>
+          <div class="button-buy" 
+             data-id="qqww11" 
+             data-name="Клеш Рояль" 
+             data-price="100грн." 
+             data-img='<img src="img/slide-uyt.JFIF">'
+             data-count='1'> 
+              Купити 
+
+        </div>
+      </div>
+        <!-- Картка товару-->
+
+
+    <!-- Картка товару-->
+        <div class="card-wrap">
+          <a href="#">
+            <img src="img/typ.PNG">
+            <h2> Аккаунт Бравл </h2>
+          </a>
+          <p> Розширений вибір </p>
+          <span> 100 грн. </span>
+          <div class="button-buy" 
+             data-id="ttgg55" 
+             data-name="Бравл Старс" 
+             data-price="100грн." 
+             data-img='<img src="img/typ.PNG">'
+             data-count='1'>
+              Купити 
+        </div>
+        <!-- Картка товару-->
+      </div>
+
+    <!-- Картка товару-->
+        <div class="card-wrap">
+          <a href="#">
+            <img src="img/poi.JFIF">
+            <h2> Аккаунт Стендоф </h2>
+          </a>
+          <p> Розширений вибір </p>
+          <span> 100 грн. </span>
+          <div class="button-buy" 
+             data-id="qqww11" 
+             data-name="Cтендоф" 
+             data-price="100грн." 
+             data-img='<img src="img/poi.JFIF">'
+             data-count='1'>
+              Купити
+        </div>
+        <!-- Картка товару-->
+        </div>
+        
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Описание</h5>
+                <p class="grey-text text-lighten-4">Ты сможешь получить интересные аккаунты по разным играм(Стендоф,бравл старс,клеш рояль).</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text"></h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Главная</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Каталог</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Аккаунты</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+        <!-- Модальне вікно Кошик-->
+      <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Кошик</h4>
+            <p>Оформлення товару</p>
+          </div>
+
+        <a href="#!" 
+           id="cart-close" 
+           class="modal-close waves-effect waves-green btn-flat">
+           Закрити
+        </a>
+
+        <ul id="cart" class="cart-items">
+        </ul>
+        <!-- Форма Кошик -->
+        <div class="row">
+          <form id="ajax-contact-form" enctype="multipart/form-data" method="post">
+
+            <!-- Текстове поле Ім'я -->
+            <div class="form-group">
+              <label for="nameFF">Ім'я:</label>
+              <input id="nameFF" name="nameFF" type="text" required>
+            </div>
+            <!-- Текстове поле Ім'я -->
+
+            <!-- Текстове поле Телефон -->
+            <div class="form-group">
+              <label for="telFF">Телефон:</label>
+              <input id="telFF" name="telFF" type="tel" required>
+            </div>
+            <!-- Текстове поле Телефон -->
+<!-- Текстове поле Cart, для збереження id товарів -->
+            <div class="form-group cart-input">
+              <label for="cartFF">Cart:</label>
+              <input id="cartFF" name="cartFF" type="text">
+            </div>
+            <!-- Текстове поле Cart, для збереження id товарів -->
+
+            <!-- Кнопуа відправити -->
+            <button class="btn" type="submit" id="submitFF">Відправити</button>
+            <!-- Кнопуа відправити -->
+            
+          </form>
+        </div>
+        <!-- Форма Кошик -->
+
+      </div>
+          <!-- Модальне вікно Кошик-->
+
+     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+
+ <script type="text/javascript">
+        $(document).ready(function(){
+          // Ініціалізація модальноно вікна
+          $('.modal').modal();
+        });
+      </script>
+
+  
+
+    </body>
+  </html>
+
+
